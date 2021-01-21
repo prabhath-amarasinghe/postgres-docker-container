@@ -1,0 +1,26 @@
+READ ME
+=======
+
+Description
+===========
+
+The script allows you to spinup a postgres db running in a docker container. It will download the postgres image from dockerhub as part of the process
+
+
+Requirement
+===========
+
+Requires to docker to be installed.
+The follwing txt files are reqired to be in the same directory as run.sh
+	1. version.txt  -> File should containt a single line that indicates the postgres version you require. Default is 13.1
+	2. password.txt -> File should containt a single line that indicates the password you intend to use for the postgres database. Default is postgres
+	3. volume.txt   -> File should containt a single line that indicates the absolute path to the directory that you intend to use as the volume for the container
+	4. target.txt   -> File should contain the absolute path to the directory to which the volume will be mapped. This is normally /var/lib/postgresql/data
+	
+	
+Steps To Follow
+================
+
+Open the terminal for the directory to which you have saved the above 4 files and the run.sh file
+Execute the run.sh file. Note you may require to run the run.sh file as a super user depending on your set up
+
